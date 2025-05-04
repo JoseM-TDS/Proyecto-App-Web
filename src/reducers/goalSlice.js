@@ -18,5 +18,5 @@ export const goalSlice = createSlice({
 })
 
 export const { addGoal } = goalSlice.actions
-export const selectTools = (state) => state.todos.Value
-export default goalSlice.reducer
+export const selectTools = (state) => state.goals.Value
+export const goalReducer = goalSlice.reducer

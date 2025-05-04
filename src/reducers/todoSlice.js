@@ -23,4 +23,4 @@ export const todoSlice = createSlice({
 
 export const { addTodo, initAddTodo } = todoSlice.actions
 export const selectTools = (state) => state.todos.Value
-export default todoSlice.reducer
+export const todoReducer = todoSlice.reducer
