@@ -30,7 +30,7 @@ export const todoSlice = createSlice({
         },
         removeTodo: (state, action) => {
             state.Value = state.Value.filter((task) => task._id !== action.payload);
-            fetch('http://localhost:3001/tasks/removeTask'+ action.payload, {
+            fetch('http://localhost:3001/tasks/deleteTask'+ action.payload, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
