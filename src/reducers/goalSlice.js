@@ -30,7 +30,7 @@ export const goalSlice = createSlice({
         },
         removeGoal: (state, action) => {
             state.Value = state.Value.filter((task) => task._id !== action.payload);
-            fetch('http://localhost:3001/goals/removeGoal'+ action.payload, {
+            fetch('http://localhost:3001/goals/deleteGoal'+ action.payload, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
