@@ -2,15 +2,17 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './item.scss'
 
-function Item() {
+function Item(props) {
   return (
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{props.name}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Descripcion
+        </Card.Text>
+        <Card.Text>
+          Elaborar una aplicacion web en la que se pueda llevar el control de mis tareas y metas personales.
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
