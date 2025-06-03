@@ -51,7 +51,7 @@ function Formulario() {
         <Form.Control type="date" placeholder="Date" />
       </Form.Group>
 
-      <Button class="btn btn-primary" type="button">Button</Button>
+      <Button class="btn btn-primary" type="button" onClick={addItem()}>Add to list</Button>
     </Form>
   );
 }
